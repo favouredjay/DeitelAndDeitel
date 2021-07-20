@@ -1,8 +1,6 @@
 package chapter14;
 
-import java.security.NoSuchAlgorithmException;
 import java.security.SecureRandom;
-import java.util.Arrays;
 
 public class RandomSentences {
     public static void main(String[] args) {

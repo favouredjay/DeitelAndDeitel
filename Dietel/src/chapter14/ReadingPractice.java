@@ -16,5 +16,6 @@ public class ReadingPractice {
             System.out.print(character);
 
 
+
     }
 }
