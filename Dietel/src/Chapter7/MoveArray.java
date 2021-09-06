@@ -8,7 +8,7 @@ public class MoveArray {
             array[i-1] = array[i];
 
         }
-        array[4] = value1;
+        array[5] = value1;
         for(int i : array)
         System.out.print(i + ",");
     }

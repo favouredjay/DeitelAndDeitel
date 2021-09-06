@@ -7,6 +7,7 @@ public class Chapter6 {
     int headCount;
     int tailCount;
 
+
     enum CoinTossingChance{
         HEAD,
         TAIL;
@@ -60,6 +61,7 @@ public class Chapter6 {
 
     public boolean isPerfectNumber(int number) {
         int i;
+
         for (i = 1; i < number; i++) {
             if (number % i == 0){
                 perfect = perfect + i;
@@ -123,5 +125,6 @@ public class Chapter6 {
 
         System.out.println(chapter6.getHeadCount());
         System.out.println(chapter6.getTailCount());
+
     }
 }

@@ -2,7 +2,7 @@ package chapter14;
 
 public class PigLatin {
     public static void main(String[] args) {
-        String word = "the";
+        String word = "displace";
 
         StringBuilder displaceWord = new StringBuilder(word.substring(1));
         displaceWord.append(word.charAt(0));

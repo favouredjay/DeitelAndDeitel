@@ -38,9 +38,7 @@ int [] arrays = {1,2,3,4,5,6,7,8 ,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24
 
             for (number = i + 1; number < arrays.length; number++)
                 if (arrays[i] > arrays[number]) {
-                    temp = arrays[i];
-                    arrays[i] = arrays[number];
-                    arrays[number] = temp;
+
 
 
                 }
