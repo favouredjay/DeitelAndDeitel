@@ -1,12 +1,12 @@
 package Extras;
 
 public class WordsAndNumbers {
-    public static void main(String[] args) {
+   public static String order (String words){
         int temp;
-        int i;
+
         int j;
         boolean isDigit = false;
-        String words = "gir2l ba4d G1ood gone3";
+//        words = "gir2l ba4d G1ood gone3";
 //        boolean isGreater = Character.isDigit(Integer.parseInt(String.valueOf(words.charAt(i)))) > Character.isDigit(Integer.parseInt(String.valueOf(words.charAt(j))));
 
 //        StringBuilder appendWord = new StringBuilder();
@@ -37,10 +37,30 @@ public class WordsAndNumbers {
 //                isDigit = true;
 //                break;
 //              if(isDigit && words.charAt(j) > )
+//        if(words.length() == 0) return "";
+       StringBuilder appendWord = new StringBuilder();
+       String[] wordArray = words.split(" ");
+       String [] array = new String[wordArray.length];
+       int digit = 0;
 
-
+       for (String s: wordArray){
+           for (int i = 0; i < s.length(); i++){
+               if( Character.isDigit(s.charAt(i))){
+                   digit = Integer.parseInt(Character.toString(s.charAt(i)));
+                   break;
+               }
+           }
+           array[digit-1] = s;
+       }
+            for(String s : array){
+                appendWord.append(s).append(" ");
+            }
+            return appendWord.substring(0, appendWord.length());
             }
 
+    public static void main(String[] args) {
+        System.out.println( order("gir2l ba4d G1ood gone3"));
+    }
         }
 
 

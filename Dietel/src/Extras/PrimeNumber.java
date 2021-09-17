@@ -2,14 +2,22 @@ package Extras;
 
 public class PrimeNumber {
     public static void main(String[] args) {
-        int temp;
+        int temp = 0;
         int i;
-        for( i = 1; i<10; i++){
-            for (int j = 2; j <10; j++)
-                if(i%j !=0) {
-                    temp=i;
-                    System.out.println(temp);
+        for (i = 2; i <= 100; i++) {
+            boolean isPrime = true;
+            for (int j = 2; j <= i / 2; j++) {
+                if (i % j == 0) {
+                    isPrime = false;
+                    break;
+
                 }
+            }
+            if (isPrime) {
+                System.out.println(i);
+            }
         }
+
+
     }
 }

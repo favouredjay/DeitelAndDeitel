@@ -1,5 +1,4 @@
 package Chapter6;
-
 public class GreatestCommonDivisor {
     public int gcd(int num1, int num2) {
         int gcd = 1;
