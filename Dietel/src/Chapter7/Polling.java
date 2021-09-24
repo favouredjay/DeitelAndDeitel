@@ -11,20 +11,6 @@ public class Polling {
     static int[][] ratings = new int[5][10];
 
 
-//    public void setCauses() {
-//        for (int i = 0; i < causes.length; i++) {
-//            System.out.println(causes[i]);
-//        }
-//    }
-
-//    public void displayTable() {
-//        for (int i = 0; i < ratings.length; i++) {
-//            for (int j = 0; j < ratings[i].length; j++) {
-//                System.out.print(ratings[i][j] + " ");
-//                System.out.println();
-//            }
-//        }
-//    }
 
     public static void displayEntireTable() {
         for (int j = 0; j < causes.length; j++) {
@@ -37,11 +23,7 @@ public class Polling {
         }
     }
 
-//    public static void validRating(int userRating) {
-//        if (userRating < 1 || userRating > 10) {
-//            throw new IllegalArgumentException("rating must be between 1 and 10");
-//        }
-//    }
+
 
     public static void rateElection(int userRating) {
         int indexToIncrement = userRating - 1;
@@ -99,7 +81,8 @@ public class Polling {
             userRating = input.nextInt();
             genderInequality(userRating);
 
-        } displayEntireTable();
+        }
+        displayEntireTable();
         getMaximumRating();
     }
 }

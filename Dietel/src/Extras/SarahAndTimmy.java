@@ -11,7 +11,7 @@ public class SarahAndTimmy {
         int sarah = input.nextInt();
         System.out.println("Enter another number");
         int timmy = input.nextInt();
-        if(sarah%2 == 0 && timmy % 2 == 1){
+        if((sarah%2 == 0 && timmy % 2 == 1) || (sarah % 2 == 1 && timmy % 2 == 0)){
             System.out.println("They are in love");
             return isInLove = true;
             }
