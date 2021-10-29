@@ -18,7 +18,7 @@ public class checkPermutation {
         Arrays.sort(ch1);
         System.out.println(Arrays.toString(ch));
         System.out.println(Arrays.toString(ch1));
-//        for (int i = 0; i < ch.length; i++) {
+
             if (Arrays.equals(ch, ch1)) {
                 return true;
 
@@ -30,13 +30,6 @@ public class checkPermutation {
 
 
     public static void main(String[] args) {
-//        String str1 = "abcd";
-//        String str2 = "bcda";
-//        if(isPermutation(str1, str2)){
-//            System.out.println("yes");
-//        }
-//        else System.out.println("no");
-//    }
         System.out.println(isPermutation("abdc", "bcda"));
     }
 }
