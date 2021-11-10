@@ -1,4 +1,4 @@
-package Shape;
+package Chapter10.Shape;
 
 public class Sphere extends ThreeDimensionalShapes{
     private double radius;

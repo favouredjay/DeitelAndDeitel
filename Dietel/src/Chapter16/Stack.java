@@ -4,7 +4,7 @@ public class Stack {
 
     public static void printStack(java.util.Stack<Number> stack){
 
-        System.out.println(stack.isEmpty()? "stack is empty" : "Stack contains " + stack);
+        System.out.println(stack.isEmpty()? "stack is empty" : "Stacking contains " + stack);
     }
 
     public static void main(String[] args) {

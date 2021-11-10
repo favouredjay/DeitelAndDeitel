@@ -15,16 +15,20 @@ public class EnforcingPrivacyWithCryptography {
                 digits = 4;
             }else {
                 System.out.println("Digit must be up to 4");}
-                    if (firstNumber >= 1000){
-                    firstNumber = (number+7)%10;}
-                    else if (number >= 100){
-                    secondNumber = (number + 7)%10;}
-                    else if(thirdNumber>=10){
-                    thirdNumber = (number + 7) %10;}
-                    else{
-                    fourthNumber = (number + 7)%10;}
+//                    if (firstNumber >= 1000){
+//                    firstNumber = (number+7)%10;}
+//                    else if (number >= 100){
+//                    secondNumber = (number + 7)%10;}
+//                    else if(thirdNumber>=10){
+//                    thirdNumber = (number + 7) %10;}
+//                    else{
+//                    fourthNumber = (number + 7)%10;}
+            firstNumber = ((number/1000) + 7)%10;
+            secondNumber = ((number%1000/100) + 7)%10;
+            thirdNumber = ((number % 1000 /10) + 7)%10;
+            fourthNumber = ((number %10)+7)%10;
 
-                     result = (thirdNumber*1000)  + (fourthNumber * 100)  + (firstNumber*10) +  (secondNumber*1);
+            System.out.println(thirdNumber + "" + fourthNumber + "" + firstNumber + "" +secondNumber);
             }
         }
 
@@ -35,7 +39,7 @@ public class EnforcingPrivacyWithCryptography {
     public static void main(String[] args) {
         EnforcingPrivacyWithCryptography cryptography = new EnforcingPrivacyWithCryptography();
         cryptography.encryption(3456);
-        System.out.println(cryptography.getEncryption());
+//        System.out.println(cryptography.getEncryption());
     }
 
 }

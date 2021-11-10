@@ -30,6 +30,7 @@ public class DaysOfChristmas {
                 case 12:
                     System.out.println("Twelve Lords a Leaping!!");
 
+
                 case 11:
                     System.out.println("Eleven Ladies Dancing");
 
@@ -55,9 +56,10 @@ public class DaysOfChristmas {
                     System.out.println("Three French hens!!");
                 case 2:
                     System.out.println("Two Turtle dove, and");
-
+                break;
                 default:
                     System.out.println("A Partridge in a pear-tree!! \n ");
+                    break;
 
 
             }

@@ -1,4 +1,4 @@
-package Shape;
+package Chapter10.Shape;
 
 public abstract class TwoDimensionalShapes extends Shape {
 

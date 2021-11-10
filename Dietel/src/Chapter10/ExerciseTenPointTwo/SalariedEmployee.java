@@ -1,10 +1,10 @@
 package Chapter10.ExerciseTenPointTwo;
 
-import java.time.LocalDate;
+import java.util.Date;
 
 public class SalariedEmployee extends Employee{
     private double WeeklySalary;
-    public SalariedEmployee(String firstName, String lastName, String socialSecurityNumber, double weeklySalary, LocalDate dateOfBirth) {
+    public SalariedEmployee(String firstName, String lastName, String socialSecurityNumber, double weeklySalary, Date dateOfBirth) {
         super(socialSecurityNumber, firstName, lastName, dateOfBirth);
         WeeklySalary = weeklySalary;
     }

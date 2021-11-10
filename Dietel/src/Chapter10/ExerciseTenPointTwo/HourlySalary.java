@@ -1,12 +1,12 @@
 package Chapter10.ExerciseTenPointTwo;
 
-import java.time.LocalDate;
+import java.util.Date;
 
 public class HourlySalary extends Employee {
 private  double wage;
 private double hours;
 
-    public HourlySalary(LocalDate dateOfBirth, String firstName, String lastName, String socialSecurityNumber, double wage, double hours) {
+    public HourlySalary(Date dateOfBirth, String firstName, String lastName, String socialSecurityNumber, double wage, double hours) {
         super(socialSecurityNumber, firstName, lastName, dateOfBirth);
         if (wage < 0.0) // validate wage
             throw new IllegalArgumentException(

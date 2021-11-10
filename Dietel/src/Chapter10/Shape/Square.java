@@ -1,4 +1,4 @@
-package Shape;
+package Chapter10.Shape;
 
 public class Square extends TwoDimensionalShapes{
     private double side;

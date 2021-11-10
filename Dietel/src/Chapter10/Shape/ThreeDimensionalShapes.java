@@ -1,4 +1,4 @@
-package Shape;
+package Chapter10.Shape;
 
 public abstract class ThreeDimensionalShapes extends Shape{
     private int dimension1;

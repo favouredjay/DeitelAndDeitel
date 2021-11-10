@@ -7,11 +7,11 @@ public class DecimalToBinary {
         Scanner input = new Scanner(System.in);
         System.out.println("Enter a number");
         int number = input.nextInt();
-        String binary = "";
-
+//        String binary = "";
+//        int remainder;
         while(number != 0){
-            int remainder = number%2;
-             binary =  " " + remainder;
+           int  remainder = number%2;
+           String  binary = "" + remainder;
            number = number/2;
             System.out.println(binary);
         }

@@ -7,13 +7,13 @@ public class GasMileage {
         Scanner input = new Scanner(System.in);
 
         System.out.println("Enter the number of miles driven in this trip");
-        int milesDriven = input.nextInt();
+        double milesDriven = input.nextDouble();
 
         System.out.println("Enter the amount of gallon used for the trip");
-        int gallonsUsed = input.nextInt();
+        double gallonsUsed = input.nextDouble();
 
 
-        double totalMilesPerGallon = 0;
+        double totalMilesPerGallon = 14;
 
 
         while (milesDriven != -1){

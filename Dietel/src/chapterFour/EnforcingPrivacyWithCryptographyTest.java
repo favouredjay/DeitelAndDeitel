@@ -8,6 +8,7 @@ public class EnforcingPrivacyWithCryptographyTest {
     @Test
     void testThatDigitsCanBeEncrypted(){
         cryptography.encryption(5521);
-        System.out.println(cryptography.getEncryption());
+
+
     }
 }

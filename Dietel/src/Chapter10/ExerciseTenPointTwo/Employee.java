@@ -1,14 +1,14 @@
 package Chapter10.ExerciseTenPointTwo;
 
-import java.time.LocalDate;
+import java.util.Date;
 
 public abstract class Employee {
-    private LocalDate dateOfBirth;
+    private final Date dateOfBirth;
     private String firstName;
     private String lastName;
     private String socialSecurityNumber;
 
-    public Employee( String firstName, String lastName, String socialSecurityNumber, LocalDate dateOfBirth) {
+    public Employee( String firstName, String lastName, String socialSecurityNumber, Date dateOfBirth) {
 
         this.firstName = firstName;
         this.lastName = lastName;
@@ -18,13 +18,13 @@ public abstract class Employee {
 
 
 
-    public LocalDate getDateOfBirth() {
+    public Date getDateOfBirth() {
         return dateOfBirth;
     }
 
-    public void setDateOfBirth(LocalDate dateOfBirth) {
-        this.dateOfBirth = dateOfBirth;
-    }
+//    public void setDateOfBirth(Date dateOfBirth) {
+//        this.dateOfBirth = dateOfBirth;
+//    }
 
     public String getFirstName() {
         return firstName;
@@ -52,7 +52,7 @@ public abstract class Employee {
 
 @Override
     public  String toString(){
-        return ("First Name" + firstName + "\nLast Name" + lastName + "\nSocial Security Number " + socialSecurityNumber + "\nBirth Date" + dateOfBirth);
+        return ("First Name" + getFirstName() + "\nLast Name" + getLastName() + "\nSocial Security Number " + getSocialSecurityNumber() + "\nBirth Date" + getDateOfBirth());
 
 }
 

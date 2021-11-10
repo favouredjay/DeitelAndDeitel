@@ -7,17 +7,25 @@ public class Christmas {
         int num;
 
         for (num = 1; num <= 12; num++) {
-            System.out.println("On the " + num);
+            System.out.print("On the ");
 
 
             switch (num) {
-                case 1 -> System.out.println("st");
-                case 2 -> System.out.println("nd");
-                case 3 -> System.out.println("rd");
-                default -> System.out.println("th");
+                case 1 -> System.out.print("First ");
+                case 2 -> System.out.print("Second ");
+                case 3 -> System.out.print("Third ");
+                case 4 -> System.out.print("Fourth ");
+                case 5 -> System.out.print("Fifth ");
+                case 6 -> System.out.print("Sixth ");
+                case 7 -> System.out.print("Seventh ");
+                case 8 -> System.out.print("Eighth ");
+                case 9 -> System.out.print("Ninth ");
+                case 10 -> System.out.print("Tenth ");
+                case 11 -> System.out.print("Eleventh ");
+                case 12-> System.out.print("Twelfth ");
             }
 
-            System.out.println("day of Christmas my true love sent to me");
+            System.out.print("day of Christmas, my true love sent to me");
 
 
                 switch (num) {

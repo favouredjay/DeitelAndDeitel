@@ -1,4 +1,4 @@
-package Shape;
+package Chapter10.Shape;
 
 public class Rectangle extends TwoDimensionalShapes{
     private double sideLength;

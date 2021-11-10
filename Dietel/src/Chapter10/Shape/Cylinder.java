@@ -1,4 +1,4 @@
-package Shape;
+package Chapter10.Shape;
 
 public class Cylinder extends ThreeDimensionalShapes{
 
